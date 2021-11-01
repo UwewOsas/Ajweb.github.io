@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+    <title>Spotify - Better music for better people</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./logo.png" alt="Logo" width="50">
+            <h2>Spotify</h2>
+        </div>
+        <div class="options">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </div>
+
+    </nav>
+    <div class="music_box">
+        <h1>My song playlist</h1>
+
+        <div class="all_songs">
+            <div class="song_h" id='1'>
+                <h4>Undertaker_Theme</h4>
+                <p>3:89</p>
+                <img src="./play.svg" alt="" class="play_btn">
+            </div>
+            <div class="song_h" id='2'>
+                <h4>TripleH_Theme</h4>
+                <p>3:89</p>
+                <img src="./play.svg" alt="" class="play_btn">
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom_progress_bar">
+
+        <input type="range" name="range" id="progress_bar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fas fa-backward" id="prevSong"></i>
+            <div class="masterplay">
+                <i class="fas fa-play-circle"></i>
+            </div>
+            <i class="fas fa-forward" id='nextSong'></i>
+
+
+
+        </div>
+        <p style="color: white;" class="current_time">0</p>
+
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/c724b57337.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
